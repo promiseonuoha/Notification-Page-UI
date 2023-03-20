@@ -189,6 +189,7 @@ body {
   width: 100%;
   position: relative;
   padding-right: 22px;
+  flex-wrap: wraps;
   box-sizing: border-box;
 }
 .commented-picture {
