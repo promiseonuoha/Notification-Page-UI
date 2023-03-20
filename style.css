@@ -188,6 +188,8 @@ body {
   display: flex;
   width: 100%;
   position: relative;
+  padding-right: 22px;
+  box-sizing: border-box;
 }
 .commented-picture {
   width: 33px;
