@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Outfit&display=swap");
+/* font-family: 'EB Garamond', serif;
+font-family: 'Outfit', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 50px 0;
+  background-color: hsl(210, 60%, 98%);
+  box-sizing: border-box;
+}
+.container {
+  padding: 20px 15px 20px 15px;
+  background-color: hsl(0, 0%, 100%);
+  width: 650px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  transition: all 1s;
+  transform: translateY(-1000px);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.notifications {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+.notification_text {
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  letter-spacing: 1px;
+  color: hsl(224, 21%, 14%);
+}
+.notification_number {
+  color: hsl(0, 0%, 100%);
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(219, 85%, 26%);
+  padding: 2px 8px 1px 8px;
+  align-self: center;
+  height: 15px;
+  line-height: 15px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.mark {
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  cursor: pointer;
+  font-size: 14px;
+  color: hsl(219, 85%, 26%);
+}
+.mark:hover {
+  font-weight: bold;
+}
+.notification_one {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: hsla(211, 68%, 94%, 0.5);
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  transition: 0.5s;
+}
+.notification_one:hover {
+  background-color: hsla(211, 68%, 94%, 0.7);
+}
+.user-picture {
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  border-radius: 50%;
+}
+.mark_webber {
+  background-image: url(assets/images/avatar-mark-webber.webp);
+}
+.msg-box {
+  width: calc(100% - 42px);
+  display: flex;
+  flex-direction: column;
+}
+.msg-box-row-one {
+  display: flex;
+  gap: 6px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.name {
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: hsl(224, 21%, 14%);
+}
+.msg-box-row-one p:nth-child(2),
+.kimberly-row p:nth-child(2) {
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  font-size: 13px;
+  color: hsl(219, 12%, 42%);
+}
+.msg-box-row-one p:nth-child(3) {
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: hsl(219, 12%, 42%);
+}
+.msg-box-row-one div {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: hsl(1, 90%, 64%);
+  align-self: center;
+  transition: 0.5s;
+}
+
+.time {
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  color: hsl(219, 14%, 63%);
+  font-size: 14px;
+}
+.angela {
+  background-image: url(assets/images/avatar-angela-gray.webp);
+}
+.jacob {
+  background-image: url(assets/images/avatar-jacob-thompson.webp);
+}
+.jacob_group {
+  color: hsl(219, 85%, 26%);
+  font-weight: 600;
+}
+.rizky {
+  background-image: url(assets/images/avatar-rizky-hasanuddin.webp);
+}
+.disappear {
+  opacity: 0;
+}
+.read_one {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.private-msg {
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 6px;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+.private-msg:hover {
+  background-color: hsla(211, 68%, 94%, 0.5);
+  border: 1px solid hsla(211, 68%, 94%, 0.5);
+}
+.private-msg p {
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  color: hsl(219, 12%, 42%);
+}
+.kimberly {
+  background-image: url(assets/images/avatar-kimberly-smith.webp);
+}
+.kimberly-row {
+  gap: 6px;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.commented-picture {
+  width: 33px;
+  height: 33px;
+  border-radius: 3px;
+  background-size: cover;
+  background-image: url(assets/images/image-chess.webp);
+  position: absolute;
+  right: 0;
+}
+.nathan {
+  background-image: url(assets/images/avatar-nathan-peterson.webp);
+}
+.end-game {
+  color: hsl(219, 12%, 42%);
+  font-weight: 600;
+}
+.anna {
+  background-image: url(assets/images/avatar-anna-kim.webp);
+}
+.attribution {
+  box-sizing: border-box;
+  padding-top: 20px;
+  width: 100%;
+  padding-bottom: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (max-width: 500px) {
+  body {
+    padding: 0px;
+  }
+  .container {
+    width: 100%;
+    border-radius: 00px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0);
+  }
+  .nav {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

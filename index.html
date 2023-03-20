@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Notifications page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <div class="container" id="box">
+      <div class="nav">
+        <div class="notifications">
+          <p class="notification_text">Notifications</p>
+          <p class="notification_number" id="number">3</p>
+        </div>
+        <p class="mark" id="mark">Mark all as read</p>
+      </div>
+      <div class="notification_one" id="unread1">
+        <div class="user-picture mark_webber"></div>
+        <div class="msg-box">
+          <div class="msg-box-row-one">
+            <p class="name">Mark Webber</p>
+            <p>reacted to your recent post</p>
+            <p>My first tournament today!</p>
+            <div class="ball"></div>
+          </div>
+          <p class="time">1m ago</p>
+        </div>
+      </div>
+      <div class="notification_one" id="unread2">
+        <div class="user-picture angela"></div>
+        <div class="msg-box">
+          <div class="msg-box-row-one">
+            <p class="name">Angela Gray</p>
+            <p>followed you</p>
+            <div class="ball"></div>
+          </div>
+          <p class="time">5m ago</p>
+        </div>
+      </div>
+      <div class="notification_one" id="unread3">
+        <div class="user-picture jacob"></div>
+        <div class="msg-box">
+          <div class="msg-box-row-one">
+            <p class="name">Jacob Thompson</p>
+            <p>
+              has joined your group <span class="jacob_group">Cheese Club</span>
+            </p>
+            <div class="ball"></div>
+          </div>
+          <p class="time">1 day ago</p>
+        </div>
+      </div>
+      <div class="read_one">
+        <div class="user-picture rizky"></div>
+        <div class="msg-box">
+          <div class="msg-box-row-one">
+            <p class="name">Rizky Hassanuddin</p>
+            <p>Sent you a private message</p>
+          </div>
+          <p class="time">5 days ago</p>
+          <div class="private-msg">
+            <p>
+              Hello, thanks for setting up the Chess Club, I've been a member
+              for a few weeks now and i'm already having lots of fun and i'm
+              improving my game.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="read_one">
+        <div class="user-picture kimberly"></div>
+        <div class="msg-box">
+          <div class="kimberly-row">
+            <p class="name">Kimberly Smith</p>
+            <p>Commented on your picture</p>
+            <div class="commented-picture"></div>
+          </div>
+          <p class="time">1 week ago</p>
+        </div>
+      </div>
+      <div class="read_one">
+        <div class="user-picture nathan"></div>
+        <div class="msg-box">
+          <div class="msg-box-row-one">
+            <p class="name">Nathan Peterson</p>
+            <p>
+              reacted to your recent post
+              <span class="end-game"
+                >5 end-game strategies to increase your win rate</span
+              >
+            </p>
+          </div>
+          <p class="time">2 weeks ago</p>
+        </div>
+      </div>
+      <div class="read_one">
+        <div class="user-picture anna"></div>
+        <div class="msg-box">
+          <div class="msg-box-row-one">
+            <p class="name">Anna Kim</p>
+            <p>left the group <span class="jacob_group">Cheese Club</span></p>
+          </div>
+          <p class="time">2 weeks ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://promzy.netlify.app">Promise</a>.
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
